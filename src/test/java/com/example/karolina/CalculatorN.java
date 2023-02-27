@@ -5,14 +5,10 @@ public class CalculatorN {
 
 
     public static class Nty {
-        public int suma(int base, int exponent) {
-            int result = 1;
+        public int suma(int arg1, int arg2) {
+            int result = 0;
+            result = arg1 + arg2;
 
-
-            for (int i = 1; i < exponent; ++i) {
-                result *= base;
-
-            }
             return result;
         }
     }

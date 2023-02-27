@@ -8,11 +8,12 @@ class PotegaTest {
 
     @Test
     public void potega() {
-        Potega.pot  pot= new Potega.pot();
+
             int a=28;
             int n=19;
-            int potega = (int) Math.pow(a, n);
-            System.out.println(a + " podniesione do potęgi " + n + " wynosi:" + potega);
+            int wynik = (int) Math.pow(a, n);
+            assertEquals(2147483647, wynik);
+            System.out.println(a + " podniesione do potęgi " + n + " wynosi:" + wynik);
 
             System.out.println();
 

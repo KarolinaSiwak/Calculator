@@ -9,12 +9,11 @@ class CalculatorNTest {
     @Test
     public void suma() {
         CalculatorN.Nty nty = new CalculatorN.Nty();
-        for(int i=1; i<100; i++){
-            int sum = nty.suma(i, i++);
-            System.out.println(sum);
-
+        int suma = 0;
+        for (int i = 1; i < 100; i++) {
+            suma = nty.suma(suma, i);
+            System.out.println(suma);
         }
-
-
+        assertEquals(suma, 4950);
     }
 }
